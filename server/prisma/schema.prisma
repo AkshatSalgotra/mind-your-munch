@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String    @id @default(uuid())
+  email    String    @unique
+  password String
+  goals    Goal?
+  logs     MealLog[]
+}
+
+model Goal {
+  id       String @id @default(uuid())
+  userId   String @unique
+  user     User   @relation(fields: [userId], references: [id])
+  calories Int
+  protein  Int
+  carbs    Int
+  fat      Int
+  mode     String // cut | bulk | maintain
+}
+
+model Food {
+  id       String    @id @default(uuid())
+  name     String
+  serving  String // e.g. "1 roti (40g)"
+  calories Float
+  protein  Float
+  carbs    Float
+  fat      Float
+  category String // snack | meal | beverage
+  logs     MealLog[]
+  swapsFor Swap[]    @relation("swapTarget")
+}
+
+model MealLog {
+  id       String   @id @default(uuid())
+  userId   String
+  foodId   String
+  user     User     @relation(fields: [userId], references: [id])
+  food     Food     @relation(fields: [foodId], references: [id])
+  quantity Float
+  mealType String // breakfast | lunch | dinner | snack
+  loggedAt DateTime @default(now())
+}
+
+model Swap {
+  id           String @id @default(uuid())
+  cravingQuery String // "maggi", "samosa"
+  targetFoodId String
+  targetFood   Food   @relation("swapTarget", fields: [targetFoodId], references: [id])
+  reason       String // "60% less sodium, 2x protein"
+}
