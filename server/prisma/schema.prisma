@@ -2,6 +2,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -35,6 +36,8 @@ model Food {
   carbs    Float
   fat      Float
   category String // snack | meal | beverage
+  source   String? // e.g. "IFCT 2017", "curated"
+  verified Boolean   @default(false)
   logs     MealLog[]
   swapsFor Swap[]    @relation("swapTarget")
 }

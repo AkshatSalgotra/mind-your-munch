@@ -1,10 +1,24 @@
+.env*
+!.env.example
+
+# Dependencies
 node_modules/
+
+# Builds
 dist/
 build/
-.env
-.env.local
+.expo/
+
+# Logs
 *.log
+npm-debug.log*
+
+# OS / editor
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
 
+*.db
+*.db-journal
+plan.md

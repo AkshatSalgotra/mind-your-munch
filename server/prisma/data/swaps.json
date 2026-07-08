@@ -1,0 +1,16 @@
+[
+  { "cravingQuery": "maggi", "targetFoodName": "Vegetable Poha", "reason": "Similar comfort carbs, ~30% less fat and far less sodium, plus veggies and fiber" },
+  { "cravingQuery": "samosa", "targetFoodName": "Dhokla", "reason": "Steamed not fried: ~70% less fat for a similar savory snack" },
+  { "cravingQuery": "kachori", "targetFoodName": "Dhokla", "reason": "Steamed alternative with a fraction of the oil" },
+  { "cravingQuery": "pakora", "targetFoodName": "Dhokla", "reason": "Craving something savory and gram-flour based? Dhokla is steamed, ~85% less fat" },
+  { "cravingQuery": "gulab jamun", "targetFoodName": "Rasgulla", "reason": "Same milk-sweet fix with ~30% fewer calories and 3x less fat" },
+  { "cravingQuery": "jalebi", "targetFoodName": "Banana", "reason": "Natural sweetness, no fried sugar syrup, plus fiber and potassium" },
+  { "cravingQuery": "potato chips", "targetFoodName": "Roasted Peanuts", "reason": "Same crunch with 4x the protein and healthier fats instead of empty carbs" },
+  { "cravingQuery": "bhujia", "targetFoodName": "Roasted Chana", "reason": "Crunchy and savory with real protein and fiber, ~80% less fat" },
+  { "cravingQuery": "french fries", "targetFoodName": "Boiled Chana", "reason": "Swap fried starch for protein-rich legumes, ~85% less fat" },
+  { "cravingQuery": "biscuit", "targetFoodName": "Roasted Peanuts", "reason": "Trade refined-flour sugar for protein and healthy fats that keep you full" },
+  { "cravingQuery": "cola", "targetFoodName": "Buttermilk (Chaas)", "reason": "Fizzy sugar hit swapped for a cooling drink with protein and no added sugar" },
+  { "cravingQuery": "mango shake", "targetFoodName": "Buttermilk (Chaas)", "reason": "~75% fewer calories while still creamy and refreshing" },
+  { "cravingQuery": "ice cream", "targetFoodName": "Mango", "reason": "Naturally sweet and cold with fiber and vitamins instead of added sugar and fat" },
+  { "cravingQuery": "vada pav", "targetFoodName": "Idli", "reason": "Soft, filling and steamed: ~80% less fat than the fried-and-buttered original" }
+]
